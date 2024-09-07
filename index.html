@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Pemeliharaan Data Pelanggan</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="ui">
+        <div class="web_title">
+            PEMELIHARAAN DATA PELANGGAN
+        </div>
+        <div class="web_body">
+            <div class="upper_body">
+                <div class="left_side">
+                    <fieldset>
+                        <legend>Data Pelanggan</legend>
+                        <form action="" class="form_style" id="edit_form">
+                            <input type="hidden" name="id" id="id_data">
+                            <label for="id_pelanggan">Id Pelanggan</label>
+                            <input type="number" name="id_pelanggan" class="form_input" min="0" value="0" id="id_pelanggan_input" required>
+
+                            <label for="nama" class="form_label">Nama</label>
+                            <input type="text" name="nama" class="form_input" id="nama_input" required>
+
+                            <label for="alamat" class="form_label">Alamat</label>
+                            <input type="text" name="alamat" class="form_input" id="alamat_input" required>
+
+                            <label for="jenis_kelamin" class="form_label">Jenis Kelamin</label>
+                            <div class="jenis_kelamin_group">
+                                <input type="radio" name="jenis_kelamin" class="" value="Laki-laki" id="jenisKelaminLaki-laki">
+                                <label for="Laki-laki">Laki-laki</label>
+                                <input type="radio" name="jenis_kelamin" class="" value="Perempuan" id="jenisKelaminPerempuan">
+                                <label for="Perempuan">Perempuan</label>
+                            </div>
+
+                            <label for="" class="form_label">Umur</label>
+                            <input type="number" name="umur" class="form_input" min="0" value="0" id="umur_input" required>
+
+                            <label for="pekerjaan">Pekerjaan</label>
+                            <select id="pekerjaan_input" name="pekerjaan" required>
+                                <option value="ASN">ASN</option>
+                                <option value="Swasta">SWASTA</option>
+                                <option value="Buruh">BURUH</option>
+                            </select>
+                            
+                            <label for="" class="form_label">Penghasilan</label>
+                            <input type="number" name="penghasilan" class="form_input" min="0" value="0" id="penghasilan_input" required>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="right_side">
+                    <fieldset>
+                        <legend>Daftar Pelanggan</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Alamat</th>
+                                    <th>Pekerjaan</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pelanggan_table">
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 10px;">
+
+        </div>
+        <div class="web_bottom">
+            <fieldset class="fieldset_button">
+                <button onclick="addPelanggan()">Save</button>
+                <button onclick="deletePelanggan()">Delete</button>
+                <button onclick="clearForm()">Reset</button>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js">
+
+</script>

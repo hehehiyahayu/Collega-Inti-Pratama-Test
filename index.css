@@ -1,0 +1,73 @@
+body{
+    background-color: #efebde;
+    padding: 15px;
+}
+.web_title{
+    border: 2px #d4d2c8 solid;
+    font-size: large;
+    font-weight: 600;
+    color: #2e4878;
+    padding: 10px;
+}
+.web_body{
+    padding: 15px;
+    border: 1px #d4d2c8 solid;
+}
+.left_side, .right_side{
+    border: 1px #d4d2c8 solid;
+}
+legend{
+    color: #3e3fd5;
+}
+.web_bottom{
+    border: 1px #d4d2c8 solid;
+    
+}
+.upper_body{
+    display: flex;
+}
+.left_side{
+    padding: 10px;
+    flex: 1;
+}
+.right_side{
+    padding: 10px;
+    flex: 1;
+}
+.label_side{
+    width: 20%;
+    float: left;
+}
+.form_side{
+    width: 80%;
+    float: right;
+}
+.form_input, .form_label{
+    padding-top: 5px
+}
+fieldset{
+    border: 1px #d4d2c8 solid;
+}
+label{
+    margin-right: 10%;
+}
+button{
+    margin-right: 3%;
+}
+.form_style{
+    display: grid; grid-template-columns: 1fr 2fr; justify-content: space-between;
+}
+.fieldset_button{
+    padding-left: 60%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    background-color: white;
+}
+.td_number{
+    text-align: center;
+}
